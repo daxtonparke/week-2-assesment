@@ -21,8 +21,7 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
-
+const greetUser = username => `Welcome back ${username}`
 
 
 
@@ -42,14 +41,21 @@
 
     For example:
     canWeDeliver(84606) 
-        // `Sorry, we can't deliver to that address`
+        // `Sorry we cant deliver to that address.`
     canWeDeliver(85205) 
         // `You're in our delivery zone!`
 */
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
+const canWeDeliver = zipcode => {
+    for(i = 0; i<deliveryAreaZipCodes.length;i++){
+if (zipcode === deliveryAreaZipCodes[i]){
+    return `You're in our delivery zone!`
+} else {
+    return `Sorry we cant deliver to that address.`
+}
+    }}
 
 
 
@@ -70,9 +76,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+const canWeDeliver2 = zipcode => {
+    if (deliveryAreaZipCodes.includes(zipcode)){
+        return `You're in our delivery zone!`
+    } else {
+        return `Sorry we cant deliver to that address.`
+    }
+    } 
 
-
+  
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -106,9 +118,8 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
-
-
+deals[1].replace('15','10')
+console.log(deals[1])
 
 /*
     The restaurant is going to continue its
@@ -123,4 +134,4 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+//CODE HE
