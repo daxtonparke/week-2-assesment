@@ -30,8 +30,15 @@
     'kids'
 */
 
-//CODE HERE
+const pizza = {
+    name: 'cheese pizza',
+    price: 20,
+    catagory:'entree',
+    popularity: 1,
+    rating: 5,
+    tags: ['best sellers', 'vegan']
 
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -42,7 +49,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -52,8 +59,7 @@
     get the value.
 */
 
-//CODE HERE
-
+console.log(pizza.tags['1'])
 
 /*
     Third, destructure the price off of the

@@ -118,8 +118,9 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-deals[1].replace('15','10')
-console.log(deals[1])
+console.log(deals[0].title)
+console.log(deals[0].title.replace('15','10'))
+console.log(deals[0].title)
 
 /*
     The restaurant is going to continue its
@@ -134,4 +135,4 @@ console.log(deals[1])
     to be displaying wrong on the live site.
 */
 
-//CODE HE
+console.log(deals[1].desc.replace('March', 'April'))
