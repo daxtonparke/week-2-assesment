@@ -37,7 +37,6 @@ const pizza = {
     popularity: 1,
     rating: 5,
     tags: ['best sellers', 'vegan']
-
 }
 
 
@@ -59,7 +58,7 @@ console.log(pizza.popularity)
     get the value.
 */
 
-console.log(pizza.tags['1'])
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -68,8 +67,8 @@ console.log(pizza.tags['1'])
     Print the value of your new price variable.
 */
 
-//CODE HERE
-
+const price = pizza.price
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -78,8 +77,7 @@ console.log(pizza.tags['1'])
     Print the value of your category variable. 
 */
 
-//CODE HERE
-
+const category = pizza.catagory
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -93,9 +91,48 @@ console.log(pizza.tags['1'])
     data in some functions that you'll write.
 */
 
-//CODE HERE
-
-
+const foodArr = [
+    {
+    name: 'cheese pizza',
+    price: 20,
+    catagory:'entree',
+    popularity: 1,
+    rating: 5,
+    tags: ['best sellers', 'vegan']
+    },
+    {
+        name: 'mac and cheese',
+        price: 15,
+        catagory:'entree',
+        popularity: 2,
+        rating: 4,
+        tags: ['kids', 'best sellers']
+        },
+        {
+            name: 'fries',
+            price: 5,
+            catagory:'side',
+            popularity: 3,
+            rating: 4,
+            tags: ['best sellers', 'kids']
+            },
+            {
+                name: 'grilled cheese',
+                price: 13,
+                catagory:'entree',
+                popularity: 4,
+                rating: 3,
+                tags: ['kids', 'gluten free']
+                },
+                {
+                    name: 'soup',
+                    price: 11,
+                    catagory:'entree',
+                    popularity: 5,
+                    rating: 3,
+                    tags: ['gluten free', 'vegan']
+                    },
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -109,11 +146,17 @@ console.log(pizza.tags['1'])
     your food objects has.
 */
 
-//CODE HERE
+// not working
+console.log(foodArr)
+const foodFilter = () =>{
+if (foodArr.includes('vegan')){
+    return true
+} else return false
+}
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(foodFilter)
 
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
