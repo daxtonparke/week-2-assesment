@@ -119,7 +119,7 @@ const deals = [
 */
 
 console.log(deals[0].title)
-console.log(deals[0].title.replace('15','10'))
+deals[0].title = deals[0].title.replace('15','10')
 console.log(deals[0].title)
 
 /*
@@ -135,4 +135,4 @@ console.log(deals[0].title)
     to be displaying wrong on the live site.
 */
 
-console.log(deals[1].desc.replace('March', 'April'))
+deals[1].desc = deals[1].desc.replace('March', 'April')
